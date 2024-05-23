@@ -18,7 +18,7 @@
    '(org-modern org-contrib company git flycheck-posframe lsp-ui tss wakatime-mode drag-stuff clang-capf clang-format+ cmake-mode markdown-preview-mode typescript-mode svelte-mode lsp-mode gruber-darker-theme))
  '(sgml-basic-offset 2)
  '(typescript-indent-level 2)
- '(wakatime-api-key "waka_cb994f75-0791-492d-a76d-5bd280363e40")
+ '(wakatime-api-key "")
  '(wakatime-cli-path "~/.wakatime/wakatime-cli"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
