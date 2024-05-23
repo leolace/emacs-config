@@ -1,0 +1,97 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/" . "components/")
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/" . "lib/")
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/" . ".svelte-kit/")
+ ("/home/leolarch/Documents/BSI/Comp-Soci/" . "timeline/")
+ ("/home/leolarch/.config/" . "i3/")
+ ("/home/leolarch/" . "notes/")
+ ("/home/leolarch/Documents/BSI/ICC/" . "PRJ01/")
+ ("/home/leolarch/Documents/BSI/" . "ICC/")
+ ("/home/leolarch/Documents/" . "BSI/")
+ ("/home/" . "leolarch/")
+ ("/" . "home/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/leolarch/"
+ "/home/leolarch/notes/"
+ "/home/leolarch/Documents/BSI/ICC/PRJ01/"
+ "/home/leolarch/Documents/BSI/ICC/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/components/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/functions/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/routes/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/data/"
+ "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/stores/"
+ "/home/leolarch/Documents/BSI/"
+ "/home/leolarch/.config/i3/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "pointers-&-memory-alloc.md"
+ "uaibank.c"
+ "program.c"
+ "ce-eld.md"
+ "timeline.md"
+ "timeline.org"
+ "note.org"
+ ".notes"
+ "simulado3.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/leolarch/notes/" (26186 17907 423426 810000) "#pointers-&-memory-alloc.md#" "ce-eld.md" "timeline.md" "../" "./")
+
+ ("/home/leolarch/.config/i3/" (26185 8893 237460 720000) "config" "i3status" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/data/" (26184 52509 552068 648000) "terminalsData.ts" "data.ts" "constants.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/routes/" (26183 56967 813108 69000) "+page.svelte" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/" (26184 52431 977898 26000) "README.md" "README.md~" ".markdown-preview.html" ".git/" "package.json" "pnpm-lock.yaml" ".svelte-kit/" "node_modules/" ".eslintrc.cjs" "vite.config.ts" "tsconfig.json" "svelte.config.js" ".prettierrc" ".prettierignore" ".eslintignore" "static/" "src/" ".npmrc" ".gitignore" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/components/" (26184 52442 378010 275000) "Terminal.svelte" "Image.svelte" "Video.svelte" "SlotContent.svelte" "Slots.svelte" "Navigation.svelte" "Timeline.svelte" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/PRJ01/" (26186 17484 75556 51000) "out" "uaibank.c" ".gitignore" ".git/" "config.toml" "Makefile" "../" "./")
+
+ ("/home/leolarch/" (26186 17861 976273 904000) ".bash_history" ".xsession-errors" ".xsession-errors.old" ".emacs" "notes/" ".notes" ".screenlayout/" "Video/" ".tmux.conf" ".gitconfig" ".emacs.d/" ".viminfo" ".bashrc" "Images/" ".python_history" ".cargo/" ".rustup/" ".xinitrc" ".ssh/" ".shutter/" "Documents/" ".gnupg/" ".npm/" "tin-can/" "Downloads/" ".wakatime.bdb" ".wakatime/" ".wakatime.cfg" "Builds/" ".pki/" ".cache/" ".local/" ".Xauthority" ".dmrc" ".config/" ".bash_profile" ".bash_logout" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/stores/" (26177 31400 713090 293000) "store.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/" (26176 56406 814961 222000) "app.html" "global.css" "routes/" "lib/" "app.d.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/" (26178 567 74908 83000) "simulado2.c" "out" "simulado3.c" "#min10.c#" "min10.c" "out2" "recursivo.c" "ra.c" "ra.c~" "index.c" "index.c~" "exercicio-fat.out" "Makefile" "Makefile~" "cod-font-exercicio-fatorial.c" "PRJ01/" "teste-tuple.c" "teste" "teste.c" "exercicios19-04.c" "exercicios" "exercicios18-04.c" "fluxo" "fluxo.c" "fluxo.out" "program.c" "program" "../" "./")
+
+ ("/home/leolarch/.emacs.d/" (26170 16007 168814 966000) "ido.last" "ido.last~" "backup/" ".lsp-session-v1" ".cache/" "elpa/" "auto-save-list/" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/" (26168 751 233055 620000) "ISI/" "ELD/" "ICC/" "Comp-Soci/" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/.svelte-kit/" (26167 64443 690010 955000) "output/" "types/" "generated/" "non-ambient.d.ts" "ambient.d.ts" "tsconfig.json" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/static/" (26167 65071 307888 990000) "favicon2.png" "favicon.png" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/" (26165 7304 995736 523000) "data/" "functions/" "stores/" "components/" "index.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/functions/" (26164 57243 724975 54000) "holdit.ts" "holdit.ts~" "navigation.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/Comp-Soci/" (26133 17585 337297 560000) "timeline/" ".vite/" "../" "./")
+
+ ("/home/leolarch/.config/" (26160 64923 713887 224000) "pavucontrol.ini" "vlc/" "tmux/" "alacritty/" "powerkit/" "QtProject.conf" "obsidian/" "neofetch/" "gtk-2.0/" "GIMP/" "Pinta/" "autostart/" "spotify/" "mimeapps.list" "kitty/" "i3/" "dconf/" "gtk-3.0/" "nvim/" "pulse/" "thorium/" "chromium/" "systemd/" "../" "./")
+
+ ("/home/leolarch/Documents/" (26159 62966 22060 331000) "Algebra Linear - Steinbruch.pdf" "Notes/" "leol/" "Projects/" "BSI/" "../" "./")
+
+ ("/home/" (26132 45087 168633 746000) "leolarch/" "../" "./")
+
+ ("/home/leolarch/Builds/" (26138 39106 251252 436000) "paru/" "fancontrol-gui/" "wluma/" "neovim-nightly-bin/" "neovim-git/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
