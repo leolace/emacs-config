@@ -1,9 +1,13 @@
+;; appearance
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
+(scroll-bar-mode 0)
 (ido-mode 1)
 (set-frame-font "IosevkaNerdFont-18")
 (global-display-line-numbers-mode)
+(menu-bar-mode -1)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -13,19 +17,15 @@
  '(custom-enabled-themes '(gruber-darker))
  '(custom-safe-themes
    '("e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7" default))
+ '(git-gutter:added-sign "  ")
+ '(git-gutter:deleted-sign "  ")
+ '(git-gutter:modified-sign "  ")
  '(js-indent-level 2)
  '(package-selected-packages
-   '(org-modern org-contrib company git flycheck-posframe lsp-ui tss wakatime-mode drag-stuff clang-capf clang-format+ cmake-mode markdown-preview-mode typescript-mode svelte-mode lsp-mode gruber-darker-theme))
+   '(tide git-gutter org-modern org-contrib company git flycheck-posframe lsp-ui tss drag-stuff clang-capf clang-format+ cmake-mode markdown-preview-mode typescript-mode svelte-mode lsp-mode gruber-darker-theme))
  '(sgml-basic-offset 2)
- '(typescript-indent-level 2)
- '(wakatime-api-key "")
- '(wakatime-cli-path "~/.wakatime/wakatime-cli"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+ '(typescript-indent-level 2))
+;; disable keys
 (global-set-key [C-down-mouse-3] nil)
 (global-set-key [mouse-3] nil)
 (global-unset-key [C-down-mouse-1])
@@ -35,11 +35,10 @@
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
+
+;; disable backups
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
       backup-by-copying      t  ; Don't de-link hard links
       version-control        t  ; Use version numbers on backups
@@ -52,38 +51,59 @@
   (add-to-list 'eglot-server-programs
                '(svelte-mode . ("svelteserver" "--stdio"))))
 
-(use-package flycheck-posframe
-  :ensure t
-  :after flycheck
-  :config (add-hook 'flycheck-mode-hook #'flycheck-posframe-mode))
-
 (setq create-lockfiles nil)
 
-(add-hook 'after-init-hook 'global-company-mode)
-(add-hook 'after-init-hook 'wakatime-mode)
-(add-hook 'svelte-mode-hook #'lsp)
+;; (add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'svelte-mode-hook 'lsp)
 
-(setq company-minimum-prefix-length 1
-      company-idle-delay 0.0) ;; default is 0.2
+(setq company-minimum-prefix-length 2
+      company-idle-delay 0.2) ;; default is 0.2
 
-(global-set-key (kbd "C-c l") #'org-store-link)
-(global-set-key (kbd "C-c C-t") #'org-todo)
-(global-set-key (kbd "C-c a") #'org-agenda)
-(global-set-key (kbd "C-c c") #'org-capture)
+;; git gutter
+(global-git-gutter-mode +1)
 
+(set-face-background 'git-gutter:modified "yellow") ;; background color
+(set-face-background 'git-gutter:added "green")
+(set-face-background 'git-gutter:deleted "red")
 
-(defun psachin/create-notes-file ()
-  "Create an org file in ~/notes/."
+;; disable company-mode for specific files
+(add-hook 'shell-mode-hook (lambda () (company-mode -1)))
+(add-hook 'c-mode-hook (lambda () (company-mode -1)))
+
+(global-set-key (kbd "C-c r") (lambda ()
+                                (interactive)
+                                (revert-buffer t t t)
+                                (message "buffer is reverted")))
+
+(defun setup-tide-mode ()
   (interactive)
-  (let ((name (read-string "Filename: ")))
-    (expand-file-name (format "%s.org"
-                              name) "~/notes/")))
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  (company-mode +1))
 
 
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+(add-hook 'typescript-mode-hook #'tsx-ts-mode)
 
-(setq org-capture-templates
-      '(("n" "Notes" entry
-         (file psachin/create-notes-file)
-	 "* TITLE%?\n %U")))
+(setq treesit-language-source-alist
+      '((tsx        "https://github.com/tree-sitter/tree-sitter-typescript"
+                    "v0.20.3"
+                    "tsx/src")
+        (typescript "https://github.com/tree-sitter/tree-sitter-typescript"
+                    "v0.20.3"
+                    "typescript/src")))
 
-(menu-bar-mode -1)
+(setq whitespace-style '(space-mark))
+(setq whitespace-display-mappings '((space-mark 32 [183] [46])))
+
+(defface my-whitespace-face
+  '((t (:foreground "#333")))
+  "Face for displaying whitespace spaces.")
+
+(setq whitespace-space 'my-whitespace-face)
+(setq whitespace-style '(face spaces space-mark))
+
+(global-whitespace-mode 1)

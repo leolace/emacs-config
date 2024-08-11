@@ -2,13 +2,16 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/leolarch/Projects/fooco-frontend/" . "src/")
+ ("/home/leolarch/Projects/kitto/" . "src/")
+ ("/home/leolarch/Projects/" . "fooco-frontend/")
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/" . "components/")
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/" . "lib/")
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/" . ".svelte-kit/")
  ("/home/leolarch/Documents/BSI/Comp-Soci/" . "timeline/")
  ("/home/leolarch/.config/" . "i3/")
- ("/home/leolarch/" . "notes/")
- ("/home/leolarch/Documents/BSI/ICC/" . "PRJ01/")
+ ("/home/leolarch/" . ".emacs.d/")
+ ("/home/leolarch/Documents/BSI/ICC/" . "bubblesort/")
  ("/home/leolarch/Documents/BSI/" . "ICC/")
  ("/home/leolarch/Documents/" . "BSI/")
  ("/home/" . "leolarch/")
@@ -18,9 +21,21 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/leolarch/"
- "/home/leolarch/notes/"
+ "/home/leolarch/Projects/fooco-frontend/src/"
+ "/home/leolarch/Documents/BSI/ICC/bubblesort/"
+ "/home/leolarch/Documents/BSI/AED/estrutura-dados/"
+ "/home/leolarch/Projects/kitto/src/"
+ "/home/leolarch/Projects/kitto/"
+ "/home/leolarch/Documents/BSI/ICC/pointers/"
+ "/home/leolarch/Documents/BSI/ICC/PRJ2/"
  "/home/leolarch/Documents/BSI/ICC/PRJ01/"
+ "/home/leolarch/Documents/BSI/ICC/strrep/"
+ "/home/leolarch/Documents/BSI/ICC/notas/"
+ "/home/leolarch/Documents/leol/curriculum/"
+ "/home/leolarch/.config/i3/"
  "/home/leolarch/Documents/BSI/ICC/"
+ "/home/leolarch/Projects/seven-displays/"
+ "/home/leolarch/notes/"
  "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/components/"
  "/home/leolarch/Documents/BSI/Comp-Soci/timeline/"
  "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/"
@@ -29,28 +44,71 @@
  "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/data/"
  "/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/stores/"
  "/home/leolarch/Documents/BSI/"
- "/home/leolarch/.config/i3/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- "pointers-&-memory-alloc.md"
- "uaibank.c"
- "program.c"
- "ce-eld.md"
- "timeline.md"
- "timeline.org"
- "note.org"
- ".notes"
- "simulado3.c"
+ "App.tsx"
+ "main.c"
+ "Makefile"
+ "pessoa.c"
+ "#pessoa.c#"
+ "pessoa.h"
+ "app.ts"
+ "tsconfig.json"
+ "index.ts"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/leolarch/notes/" (26186 17907 423426 810000) "#pointers-&-memory-alloc.md#" "ce-eld.md" "timeline.md" "../" "./")
+ ("/home/leolarch/Documents/BSI/" (26294 35212 86665 813000) "ICC/" "AED/" "vectors/" "../" "./")
 
- ("/home/leolarch/.config/i3/" (26185 8893 237460 720000) "config" "i3status" "../" "./")
+ ("/home/leolarch/notes/" (26256 29332 141766 695000) "ideias" "ISI_27-05" "pikes" "20-05-ISI" "pointers-&-memory-alloc.md" "ce-eld.md" "timeline.md" "../" "./")
+
+ ("/home/leolarch/.config/i3/" (26256 27013 454016 432000) "config" "i3status" "../" "./")
+
+ ("/home/leolarch/Documents/leol/curriculum/" (26219 21695 492944 584000) "compile.sh" "curriculum.dvi" "curriculum.out" "curriculum.tex" "curriculum.pdf" "curriculum.log" "curriculum.aux" "../" "./")
+
+ ("/home/leolarch/Projects/kitto/" (26258 63967 972244 124000) "README.md" ".gitignore" ".git/" "dist/" "tsconfig.json" "src/" "package.json" "pnpm-lock.yaml" "node_modules/" "../" "./")
+
+ ("/home/leolarch/Projects/kitto/src/" (26268 25470 406221 881000) "app.ts" "assets/" "index.html" "index.ts" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/AED/estrutura-dados/" (26293 21567 964053 828000) "out" "Makefile" "pessoa.c" "pessoa.h" "main.c" "../" "./")
+
+ ("/home/leolarch/.emacs.d/" (26256 36256 448665 681000) "tree-sitter/" ".emacs" "ido.last" "ido.last~" "eshell/" "#ido.last#" "ac-comphist.dat" ".git/" ".gitignore" "bookmarks" "backup/" ".lsp-session-v1" ".cache/" "elpa/" "auto-save-list/" "../" "./")
+
+ ("/home/leolarch/Projects/fooco-frontend/src/" (26256 35615 329026 20000) "types/" "styles/" "stores/" "schemas/" "routes.tsx" "pages/" "mutations/" "main.tsx" "interface/" "hooks/" "helpers/" "components/" "assets/" "api/" "Layout.tsx" "App.tsx" "../" "./")
+
+ ("/home/leolarch/Projects/fooco-frontend/" (26256 35615 329026 20000) "vite.config.ts" "tsconfig.node.json" "tsconfig.json" "src/" "public/" "pnpm-lock.yaml" "package.json" "package-lock.json" "index.html" "README.md" ".prettierrc.json" ".gitignore" ".eslintrc.json" ".eslintignore" ".env.example" ".git/" "../" "./")
+
+ ("/home/leolarch/Projects/" (26269 48066 953830 835000) "code-worse/" "velha/" "app2.ts" "fooco-frontend/" "kitto/" "seven-segs-display/" "peggy/" "../" "./")
+
+ ("/home/leolarch/" (26294 51070 370302 855000) ".bash_history" ".steampid" ".steampath" ".xsession-errors" ".xsession-errors.old" ".viminfo" ".tmux.conf" ".stremio-server/" ".python_history" ".cache/" ".Xresources" ".mono/" ".Xauthority" ".bash_history-02171.tmp" "Videos/" "Public/" ".factorio/" ".pulse-cookie" ".steam/" "Projects/" ".emacs" ".bash_history-87281.tmp" "notes/" ".notes" ".screenlayout/" "Video/" ".gitconfig" ".emacs.d/" ".bashrc" "Images/" ".cargo/" ".rustup/" ".xinitrc" ".ssh/" ".shutter/" "Documents/" ".gnupg/" ".npm/" "tin-can/" "Downloads/" "Builds/" ".pki/" ".local/" ".dmrc" ".config/" ".bash_profile" ".bash_logout" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/bubblesort/" (26294 46338 515249 679000) "out" "main.c" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/" (26294 46464 169366 405000) "selectionsort/" "bubblesort/" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/selectionsort/" (26294 46467 459385 634000) "main.c" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/pointers/" (26244 33128 596938 670000) "out" "main.c" "main2.c" "Makefile" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/PRJ2/" (26230 20790 293637 32000) "file.txt" "uaibank.c" ".gitignore" ".git/" "Makefile" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/PRJ01/" (26220 62798 408238 359000) "out" "file.txt" "uaibank.c" ".gitignore" ".git/" "Makefile" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/strrep/" (26220 55600 311559 740000) "out" "Makefile" "main.c" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/notas/" (26214 1293 337731 911000) "out" "#main1.c#" ".git/" "main2.c" "Makefile" "main1.c" "../" "./")
+
+ ("/home/leolarch/.config/" (26212 38595 9062 237000) "pavucontrol.ini" "libinput-gestures.conf" "user-dirs.locale" "user-dirs.dirs" "kdeconnect/" "ibus/" "YouTube Music/" "Awesomeness/" "QtProject.conf" "obs-studio/" "vlc/" "tmux/" "alacritty/" "powerkit/" "obsidian/" "neofetch/" "gtk-2.0/" "GIMP/" "Pinta/" "autostart/" "spotify/" "mimeapps.list" "kitty/" "i3/" "dconf/" "gtk-3.0/" "nvim/" "pulse/" "thorium/" "chromium/" "systemd/" "../" "./")
+
+ ("/home/leolarch/Documents/BSI/ICC/PRJ01/output/" (26188 33374 882003 116000) "uaibank.exe" "file.txt" "../" "./")
+
+ ("/home/leolarch/Projects/seven-displays/" (26202 12585 472383 538000) "#main.c#" "out" "Makefile" "main.c" "../" "./")
+
+ ("/home/leolarch/Documents/" (26195 55850 567104 834000) "Algebra Linear - Steinbruch.pdf" "Notes/" "leol/" "BSI/" "../" "./")
 
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/data/" (26184 52509 552068 648000) "terminalsData.ts" "data.ts" "constants.ts" "../" "./")
 
@@ -60,19 +118,9 @@
 
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/components/" (26184 52442 378010 275000) "Terminal.svelte" "Image.svelte" "Video.svelte" "SlotContent.svelte" "Slots.svelte" "Navigation.svelte" "Timeline.svelte" "../" "./")
 
- ("/home/leolarch/Documents/BSI/ICC/PRJ01/" (26186 17484 75556 51000) "out" "uaibank.c" ".gitignore" ".git/" "config.toml" "Makefile" "../" "./")
-
- ("/home/leolarch/" (26186 17861 976273 904000) ".bash_history" ".xsession-errors" ".xsession-errors.old" ".emacs" "notes/" ".notes" ".screenlayout/" "Video/" ".tmux.conf" ".gitconfig" ".emacs.d/" ".viminfo" ".bashrc" "Images/" ".python_history" ".cargo/" ".rustup/" ".xinitrc" ".ssh/" ".shutter/" "Documents/" ".gnupg/" ".npm/" "tin-can/" "Downloads/" ".wakatime.bdb" ".wakatime/" ".wakatime.cfg" "Builds/" ".pki/" ".cache/" ".local/" ".Xauthority" ".dmrc" ".config/" ".bash_profile" ".bash_logout" "../" "./")
-
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/stores/" (26177 31400 713090 293000) "store.ts" "../" "./")
 
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/" (26176 56406 814961 222000) "app.html" "global.css" "routes/" "lib/" "app.d.ts" "../" "./")
-
- ("/home/leolarch/Documents/BSI/ICC/" (26178 567 74908 83000) "simulado2.c" "out" "simulado3.c" "#min10.c#" "min10.c" "out2" "recursivo.c" "ra.c" "ra.c~" "index.c" "index.c~" "exercicio-fat.out" "Makefile" "Makefile~" "cod-font-exercicio-fatorial.c" "PRJ01/" "teste-tuple.c" "teste" "teste.c" "exercicios19-04.c" "exercicios" "exercicios18-04.c" "fluxo" "fluxo.c" "fluxo.out" "program.c" "program" "../" "./")
-
- ("/home/leolarch/.emacs.d/" (26170 16007 168814 966000) "ido.last" "ido.last~" "backup/" ".lsp-session-v1" ".cache/" "elpa/" "auto-save-list/" "../" "./")
-
- ("/home/leolarch/Documents/BSI/" (26168 751 233055 620000) "ISI/" "ELD/" "ICC/" "Comp-Soci/" "../" "./")
 
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/.svelte-kit/" (26167 64443 690010 955000) "output/" "types/" "generated/" "non-ambient.d.ts" "ambient.d.ts" "tsconfig.json" "../" "./")
 
@@ -83,10 +131,6 @@
  ("/home/leolarch/Documents/BSI/Comp-Soci/timeline/src/lib/functions/" (26164 57243 724975 54000) "holdit.ts" "holdit.ts~" "navigation.ts" "../" "./")
 
  ("/home/leolarch/Documents/BSI/Comp-Soci/" (26133 17585 337297 560000) "timeline/" ".vite/" "../" "./")
-
- ("/home/leolarch/.config/" (26160 64923 713887 224000) "pavucontrol.ini" "vlc/" "tmux/" "alacritty/" "powerkit/" "QtProject.conf" "obsidian/" "neofetch/" "gtk-2.0/" "GIMP/" "Pinta/" "autostart/" "spotify/" "mimeapps.list" "kitty/" "i3/" "dconf/" "gtk-3.0/" "nvim/" "pulse/" "thorium/" "chromium/" "systemd/" "../" "./")
-
- ("/home/leolarch/Documents/" (26159 62966 22060 331000) "Algebra Linear - Steinbruch.pdf" "Notes/" "leol/" "Projects/" "BSI/" "../" "./")
 
  ("/home/" (26132 45087 168633 746000) "leolarch/" "../" "./")
 

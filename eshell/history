@@ -1,0 +1,4 @@
+ls
+make
+ls -oU
+ls
